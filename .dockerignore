@@ -1,0 +1,6 @@
+# Build context = repo root (az acr build -f azure/Dockerfile .)
+node_modules
+.git
+*.log
+.agent-memory
+docs/img/*.png

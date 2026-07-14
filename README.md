@@ -167,6 +167,29 @@ to force a theme.
 
 ---
 
+## Run it in Azure (always-on) ☁️
+
+By default the nightly **dream** runs on your machine — so if the machine is asleep at
+3 AM, it doesn't run. **Phase 1** moves the consolidation to an **Azure Container Apps
+Job** on a cron and puts `memory.db` on an **Azure Files** share, so the dream happens
+**even when your machine is off** and the store is durable and central.
+
+```bash
+az login
+./azure/deploy.sh            # builds the image in the cloud (no local Docker) + provisions everything
+az containerapp job start -n job-scout-dream -g rg-scout-graph-memory   # one-off test run
+```
+
+The same MiniLM engine runs in the container (baked in, still free/offline). A tiny
+Mac-side `azure/sync/scout-sync.sh` push/pulls between Scout's bank and the cloud store
+whenever your machine is on. Full guide: **[docs/azure-deployment.md](docs/azure-deployment.md)**.
+
+> Note: Scout itself is a desktop app, so **recall** and writing back into its bank still
+> need your machine on *at some point*. Azure specifically fixes the *always-on nightly
+> consolidation* + *durable central store*.
+
+---
+
 ## Integrating with a host agent
 
 The engine is **host-agnostic** — it only reads a snapshot JSON and writes an inject-ready export.
