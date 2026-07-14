@@ -131,6 +131,8 @@ recall contract. Those two files are the agent-facing instructions.
 
 ## The 3D explorer
 
+![Graph store visualization — 3D memory nebula](docs/img/graph-store-visualization.png)
+
 `export-viz` renders a self-contained HTML explorer (`$MEMORY_VIZ`) plus its vendored engine next to
 it. Open the file in any browser. Features: nodes laid out by **meaning** (PCA of the embeddings, so
 the cloud fills space and semantically-similar memories cluster), color = fact class
