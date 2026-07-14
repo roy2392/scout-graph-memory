@@ -1,0 +1,26 @@
+{
+  "name": "agent-memory",
+  "version": "0.1.0",
+  "description": "Graph + vector long-term memory for AI agents: nightly consolidation (dream) and vector+graph recall over a local SQLite + sqlite-vec store, with a 3D semantic nebula explorer.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "agent-memory": "lib/dream.js"
+  },
+  "scripts": {
+    "setup": "node setup.js",
+    "dream": "node lib/dream.js dream",
+    "recall": "node lib/recall.js",
+    "doctor": "node lib/dream.js doctor",
+    "stats": "node lib/dream.js stats",
+    "budget": "node lib/dream.js budget",
+    "viz": "node lib/dream.js export-viz"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "better-sqlite3": "^12.10.0",
+    "sqlite-vec": "^0.1.9"
+  }
+}
