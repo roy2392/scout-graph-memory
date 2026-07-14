@@ -1,4 +1,22 @@
-# agent-memory
+<div align="center">
+
+<a href="https://www.microsoft.com"><img src="https://img.shields.io/badge/Microsoft-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft" height="30"></a>
+<a href="https://azure.microsoft.com"><img src="https://img.shields.io/badge/Microsoft%20Azure-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Microsoft Azure" height="30"></a>
+<a href="https://github.com/roy2392/scout-graph-memory"><img src="https://img.shields.io/badge/Microsoft%20Scout-5C2D91?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft Scout" height="30"></a>
+<a href="https://sqlite.org"><img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" height="30"></a>
+
+# Scout Graph Memory
+
+**Graph + vector long-term memory for AI agents**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-%E2%89%A518-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org)
+[![sqlite-vec](https://img.shields.io/badge/vector%20index-sqlite--vec-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://github.com/asg017/sqlite-vec)
+[![Local & free](https://img.shields.io/badge/runs-100%25%20local%20%26%20free-blueviolet?style=flat-square)](#install)
+
+</div>
+
+---
 
 Graph + vector long-term memory for AI agents — a drop-in replacement for the typical
 "flat text + RAG" memory bank. It gives an agent a **durable, self-maintaining knowledge graph**
