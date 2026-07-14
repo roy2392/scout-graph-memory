@@ -1,5 +1,11 @@
 <div align="center">
 
+<img src="docs/img/scout-logo.png" alt="Microsoft Scout" height="80">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="docs/img/microsoft-logo.svg" alt="Microsoft" height="52">
+
+<br><br>
+
 <a href="https://www.microsoft.com"><img src="https://img.shields.io/badge/Microsoft-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft" height="30"></a>
 <a href="https://azure.microsoft.com"><img src="https://img.shields.io/badge/Microsoft%20Azure-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Microsoft Azure" height="30"></a>
 <a href="https://github.com/roy2392/scout-graph-memory"><img src="https://img.shields.io/badge/Microsoft%20Scout-5C2D91?style=for-the-badge&logo=microsoft&logoColor=white" alt="Microsoft Scout" height="30"></a>
